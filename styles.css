@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-image: url('./emmanuel-denier-YiXsjwJKXmo-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0.01em;
+    background-position-x: center;
+
+    font-family: 'Poppins',sans-serif;
+
+}
+.container{
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    min-height: 100vh;
+    width: 100%;
+    color:white;
+    padding: 0px;
+    background-color: #262626;
+    margin: auto;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+}
+.container h2{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.container img{
+    width: 35px;
+    height: 35px;
+
+}
+.container input{
+    width: 70%;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    
+    background: transparent;
+    color: aliceblue;
+
+}
+
+.container button{
+    width: 20%;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    
+    cursor: pointer;
+    margin-left: 0px;
+    
+}
+.container .row{
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+    padding: 0;
+    /* margin-right: 0px; */
+    background-color: rgb(27, 26, 26);
+    /* margin: 10px; */
+    
+    
+
+}
+
+#list-container{
+    text-align: left;
+    
+}
+
+#list-container li {
+    list-style:none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px; 
+    user-select: none;   
+    cursor:pointer;
+    position: relative;
+
+}
+
+#list-container li ::before{
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url('./images/unchecked.png');
+    background-size: cover;
+    background-position: center;    
+    top: 12px;
+    bottom: 8px;
+}
