@@ -91,15 +91,27 @@ body{
 
 }
 
-#list-container li ::before{
+#list-container li::before { 
     content: '';
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 28px;
+    width: 28px;
     border-radius: 50%;
-    background-image: url('./images/unchecked.png');
+    background-image: url("images/unchecked.png");
     background-size: cover;
     background-position: center;    
     top: 12px;
-    bottom: 8px;
+    left: 8px;
+}
+
+
+
+
+#list-container li.checked{
+    color: #555;
+    text-decoration: line-through;
+    
+}
+#list-container li.checked::before{
+    background-image: url("images/checked.png");
 }
